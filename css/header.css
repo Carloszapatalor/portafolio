@@ -9,9 +9,12 @@
 }
 
 .navbar{
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
+   display: flex;
+   justify-content: space-between; 
+   width: 100vw;
+}
+
+.menu__bar{
     padding: 0 12rem;
     background-color: var(--color-fondo);
     position: relative;
@@ -22,42 +25,58 @@
     width: 120px;
     height: auto;
     margin-top: 1rem;
-
 }
+
+
 
 .checkbox{
     display: none;
 }
 
-.hearder__info{
+.header__menu{
     display: flex;
     align-items: center;
+    gap: 3px;
     
+}
+
+.header__info ul li{
+    padding: 1.5rem 1.2rem 1rem 1.2rem;
+    cursor: pointer;
 }
 
 .ul__header{
     display: flex;
-    cursor: pointer;
     flex-direction: row;
     list-style: none;
-    padding: 1.5rem 1.2rem 1rem 1.2rem;
-    gap: 20px;
+
 }
 
-.boton__contacto a{
-   padding-top: 1.5rem;
-   background-color: var(--segundo-fondo);
-   color: var(--color-fuente);
-   font-family: var(--fuente);
-   padding: 1rem 1.5rem;
-   border-color: unset;
-   border-width: 0;
-   cursor: pointer;
-   text-decoration: none;
-   border-radius: 1rem;
-   font-size:small;
-}
-
-.hearder__info ul li:hover{
+.boton__contacto{
+    padding-top: 1.5rem;
+    
     background-color: var(--segundo-fondo);
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    border-color: unset;
+    border-width: 0;
+    
+
+    
+    
+    
+}
+
+.contacto{
+    text-decoration: none;
+    font-size: large;
+    color: var(--fuente);
+    font-family: var(--fuente);
+    
+}
+
+
+.header__menu ul li:hover{
+    background-color: var(--segundo-fondo);
+    border-radius: 1rem;
 }
