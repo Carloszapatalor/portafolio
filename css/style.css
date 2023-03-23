@@ -1,0 +1,26 @@
+:root{
+    --color-fondo: #000;
+    --color-fuente: #fff;
+    --segundo-fondo: #1371ff;
+    --fuente: 'Roboto', sans-serif;
+
+}
+
+body{
+    background-color: var(--color-fondo);
+    font-family: var(--fuente);
+    color: var(--color-fuente);
+    height: 100vh;
+}
+
+.container{
+    padding: 0rem 12rem 0 12rem;
+}
+
+@media screen and (max-width: 992px) {
+
+    .container{
+        padding: 0 2rem;
+    }
+   
+}
