@@ -1,9 +1,10 @@
+
+
 :root{
     --color-fondo: #000;
     --color-fuente: #fff;
-    --segundo-fondo: #1371ff;
-    --fuente: 'Roboto', sans-serif;
-
+    --segundo-fondo: #165cc5;
+    --fuente: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body{

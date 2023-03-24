@@ -54,29 +54,162 @@
 
 .boton__contacto{
     padding-top: 1.5rem;
-    
     background-color: var(--segundo-fondo);
     border-radius: 1rem;
     padding: 1rem 1.5rem;
     border-color: unset;
-    border-width: 0;
-    
-
-    
-    
-    
+    border-width: 0;  
 }
 
 .contacto{
     text-decoration: none;
-    font-size: large;
-    color: var(--fuente);
-    font-family: var(--fuente);
-    
+    font-size: medium;
+    color: var(--color-fuente);
+    font-family: var(--fuente); 
 }
 
 
 .header__menu ul li:hover{
     background-color: var(--segundo-fondo);
     border-radius: 1rem;
+}
+
+@media screen and (max-width:1200px) {
+    .contacto{
+    font-size: x-large;
+    }
+
+    .navbar{
+        padding: 0 2rem;
+    }
+
+    .navbar .checkbox{
+        display: block;
+        position: absolute;
+        height: 32px;
+        width: 32px;
+        top: 2rem;
+        right: 2rem;
+        z-index: 2;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .navbar .menu__hamburguesa{
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar .menu__hamburguesa .linea{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #fff;
+
+    }
+
+    .navbar .menu__hamburguesa .linea1{
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .navbar .menu__hamburguesa .linea2{
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar .menu__hamburguesa .linea1{
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .ul__header{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    
+    
+    
+    }
+
+    .header__info ul li{
+        margin: 1rem 0;
+        cursor: pointer;
+        font-size: x-large;
+    }
+  
+
+
+    .header__menu ul li:hover{
+        background-color: unset;
+    }
+
+    .header__info{
+        padding: 50px;
+        height: 100wh;
+        background: var(--segundo-fondo);
+        width: 100%;
+        position: absolute;
+        top:0;
+        right: 0;
+        overflow: auto;
+        transform: translate(150%);
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .navbar input[type="checkbox"]:checked ~ .header__info{
+        transform: translateX(0);
+    } 
+
+    .navbar input[type="checkbox"]:checked ~ .menu__hamburguesa .linea1{
+        
+        transform: rotate(35deg);
+    }
+    
+    .navbar input[type="checkbox"]:checked ~ .menu__hamburguesa .linea2{
+         transform: rotate(-45deg);
+    } 
+
+    .navbar input[type="checkbox"]:checked ~ .menu__hamburguesa .linea3{
+        transform: scaleY(0);
+    } 
+
+    .boton__contacto{
+    padding-top: .5rem;
+    padding-right: 5rem;
+}
+
+    
+
+    
+
+
+   
+
+
+
+
+    
+}
+
+
+@media screen and (min-width: 992px) and (max-width:1200px) {
+    .navbar{
+        padding: 0 12rem;
+    }
+
+    .navbar .checkbox .menu__hamburguesa{
+        right: 12rem;
+    }
+    
 }
