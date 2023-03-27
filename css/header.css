@@ -1,4 +1,4 @@
-@import url("/css/style.css");
+@import url("./css/style.css");
 
 .banner{
     display: flex;
@@ -36,7 +36,7 @@
 .header__menu{
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 2rem;
     
 }
 
@@ -56,7 +56,7 @@
     padding-top: 1.5rem;
     background-color: var(--segundo-fondo);
     border-radius: 1rem;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
     border-color: unset;
     border-width: 0;  
 }
@@ -144,6 +144,8 @@
         margin: 1rem 0;
         cursor: pointer;
         font-size: x-large;
+           padding: 0;
+     
     }
   
 
@@ -188,18 +190,7 @@
     padding-top: .5rem;
     padding-right: 5rem;
 }
-
-    
-
-    
-
-
    
-
-
-
-
-    
 }
 
 

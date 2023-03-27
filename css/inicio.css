@@ -1,0 +1,140 @@
+@import url("./style.css");
+
+.inicio{
+    display: flex;
+    gap: 15rem;
+    height: 100vh;
+    width: 100vw;
+    position: relative; 
+    justify-content: flex-start;
+}
+
+
+.contenido__izquierda{
+    /**/
+    display: flex;
+
+}
+
+.contenido__derecha img{
+    height:auto;
+    width: auto;
+    border-radius: 15rem;
+}
+
+
+
+.mensaje .triangulo{
+    margin-bottom: 4rem;
+
+}
+
+.mensaje{
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: auto;
+    padding: .5rem;
+    background-color: var(--segundo-fondo)
+}
+
+.triangulo:after{
+    content: "";
+    position: absolute;
+    left: 40%;
+    border: 20px solid;
+    border-color: var(--segundo-fondo) transparent transparent;
+}
+
+.mensaje__texto{
+    padding: .5rem;
+    text-align: center;
+}
+.nombre{
+    font-size: 5rem;
+
+}
+.mensaje__info{
+    color: gray;
+}
+
+.botones__inicio {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 6rem;
+    padding: 1rem 2rem;
+    color: var(--segundo-fondo);
+   
+}
+
+.botones__inicio a{
+    background-color: var(--segundo-fondo);
+    font-size: 1rem;
+    color: var(--color-fuente);
+    padding: 1rem 1.5rem;
+}
+
+.botones__inicio button{
+    
+    border: 1px solid var(--color-fuente);
+    border-width: thin;
+    font-size: 1rem;
+    font-family: var(--fuente);
+    padding: 1rem 1.5rem;
+
+}
+
+.descargar{
+    cursor: pointer;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+
+.boton__descargar{
+    cursor: pointer;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width:576px) {
+
+    .mensaje{
+        width: 120px;
+    }
+
+    .botones__inicio{
+        padding: 1rem 1rem !important;
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+
+   .inicio{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+     gap: 2rem;
+     display: flex;
+}
+
+  .contenido__derecha img{
+    height: 20rem;
+    width: 20rem;
+    align-items: center;
+    padding-left: 1rem;
+    border-radius: 15rem;
+}
+.nombre{
+    font-size: 5rem;
+
+}
+
+
+   
+}
+
+    
