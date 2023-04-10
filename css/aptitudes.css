@@ -1,0 +1,128 @@
+@import url(../css/style.css);
+
+.aptitudes{
+    background: var(--segundo-fondo);
+    padding-top: 10rem;
+    
+}
+
+.aptitudes__titulo{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+
+.titulo{
+   text-align: center;
+   margin-bottom: 2rem;
+   margin-top: -1.5rem;
+}
+
+
+.aptitudes__descripcion{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+    
+}
+
+.resaltar{
+    color:var(--color-menu);
+    font-weight: 600;
+}
+
+.aptitudes__contenedor {
+    display: grid;
+    padding: 0 5rem 5rem 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+    
+}
+
+
+.caja{
+    background: var(--color-fondo);
+    padding: 2.1875rem 2.8125rem;
+    border-radius: .5rem;
+    transition: all .45s ease;
+}
+
+.s-icons{
+    font-size: 2rem;
+}
+
+.box h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-fuente);
+    margin-bottom: .9375rem;
+}
+
+
+.aptitudes__linea{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-weight: var(--font-semi);
+  padding: .5rem 1rem;
+  margin-bottom: var(--mb-4);
+  border-radius: .5rem;
+  box-shadow: 0px .25rem 1.5625rem var(--segundo-fondo);
+  
+  }
+
+.aptitudes__nombre{
+    display: flex;
+    align-items: center;
+}
+
+.aptitudes__barra{
+position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--color-principal);
+  height: .25rem;
+  border-radius: .5rem;
+  z-index: var(--color-menu);
+}
+
+.aptitud__html{
+    width: 80%;
+}
+
+.aptitud__css{
+    width: 75%;
+}
+
+.aptitud__js{
+    width: 60%;
+}
+
+.aptitud__basico{
+    width: 35%;
+}
+
+.aptitud__intermedio{
+    width: 70%;
+}
+
+.aptitud__nativo{
+    width: 90%;
+}
+
+.aptitud__medio{
+    width: 75%;
+}
+
+
+
+ 
+
+

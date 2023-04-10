@@ -1,0 +1,31 @@
+@import url(../css/style.css);
+.formacion{
+    background: var(--color-fondo);
+    padding-top: 10rem;
+    
+}
+
+.formacion__titulo{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+
+.caja2{
+    background: var(--segundo-fondo);
+    padding: 2.1875rem 2.8125rem;
+    border-radius: .5rem;
+    transition: all .45s ease;
+}
+
+
+.img__formacion img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+

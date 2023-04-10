@@ -1,0 +1,114 @@
+.contacto{
+    background: var(--color-fondo);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    padding-left: 5rem;
+    padding-top: 5rem;
+
+}
+
+.texto__contacto h4{
+    margin: 1.125rem 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+
+}
+
+
+.texto__contacto h2{
+
+    font-size: 3rem;
+    line-height: 1;
+
+}
+
+.texto__contacto p{
+   
+    font-size: 1rem;
+    line-height: 1;
+    margin-bottom: 1.875rem;
+
+}
+
+.listas{
+    margin-bottom: .75rem;
+
+}
+
+.listas li{
+    margin-bottom: .75rem;
+
+}
+
+.listas li a{
+    color: var(--color-fuente);
+    display: block;
+    font-size: .875rem;
+    font-size: 1.125rem;
+    transition: all .45s ease;
+    text-decoration: none;
+    
+}
+
+.listas li a:hover{
+    color: var(--color-fuente);
+    transform: translateX(.3125rem);
+
+}
+
+.listas__iconos i{
+    height: 3.125rem;
+    width: 3.125rem;
+    background-color: var( --color-principal);
+    color: var(--color-fuente);
+    font-size: 1.375rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    margin-right: .9375rem;
+    transition: all .45s ease;
+
+
+}
+
+.listas__iconos i:hover{
+    background: var(--color-fuente);
+    color: var(--color-principal);
+}
+
+.formulario form{
+    position: relative;
+}
+
+.formulario form input, form textarea{
+    width: 80%;
+    padding: .875rem;
+    background: var(--segunda-fuente);
+    color: var(--color-fuente);
+    border: none;
+    outline: none;
+    font-size: .9375rem;
+    margin-bottom: 10px;
+}
+
+.formulario textarea{
+    resize: none;
+    height: 15rem;
+}
+
+.formulario .submit{
+    background: var(--color-principal);
+    display: inline-block;
+    font-size: 1rem;
+    color: var(--color-fuente);
+    transition: all .45s ease;
+}
+
+.formulario .submit:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}

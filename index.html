@@ -1,73 +1,528 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/inicio.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital@1&display=swap" rel="stylesheet">
-    <title>Portafolio | Carlos Zapata</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/inicio.css">
+  <link rel="stylesheet" href="./css/sobremi.css">
+  <link rel="stylesheet" href="./css/aptitudes.css">
+  <link rel="stylesheet" href="./css/formacion.css">
+  <link rel="stylesheet" href="./css/portafolio.css">
+  <link rel="stylesheet" href="./css/contacto.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  <title>Portafolio | Carlos Zapata</title>
 </head>
+
 <body>
-    <header class="banner">
-        <nav class="navbar menu__bar">
-            <span class="logo">
-                <img src="./img/logo.png" alt="logo portafolio">
-            </span>
-            <input type="checkbox" aria-label="mostar/ocultar menu" class="checkbox">
-            <div class="menu__hamburguesa">
-                <span class="linea linea1"></span>
-                <span class="linea linea2"></span>
-                <span class="linea linea3"></span>
+  <!--======================HEADER=====================================-->
+  <header>
+    <span class="logo">
+      <img src="./img/logo.png" alt="logo portafolio" />
+    </span>
+    <div class="navlist">
+      <ul>
+        <li><a href="#inicio" class="active">Inicio</a></li>
+        <li><a href="#aboutme">Sobre Mi</a></li>
+        <li><a href="#habilidades">Aptitudes</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#contacto" class="boton">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="bx bx-menu" id="menu-icon"></div>
+  </header>
+  <main>
+    <!--======================INICIO=====================================-->
+    <section class="inicio" id="inicio">
+      <div class="texto__inicio">
+        <div class="slider">
+          <span class="uno">Ingeniero En Sistemas Computacionales</span>
+        </div>
+        <h1 class="titulo__nombre">CARLOS ZAPATA</h1>
+        <h3 class="subtitulo">Desarrollador Front-End</h3>
+        <p class="descripcion">Desarrollador web con 7 meses de experiencia en la elaboracion de sistemas web para el
+          Instituto Tecnologico Superior de Xalapa y 6 meses elaborando practicas en Oracle ONE by Alura</p>
+        <div class="botones__perfil">
+          <a href="#" class="btn"> <i class='bx bxs-file-pdf'></i></i> Descargar CV </a>
+          <a href="#" class="btn2 "><i class='bx bxs-briefcase-alt-2'></i> Portafolio</a>
+
+        </div>
+      </div>
+
+     
+
+    </section>
+    
+
+    <!--======================SOBRE MI=====================================-->
+    <section class="sobre__mi" id="aboutme" >
+      <div class="sobremi__img">
+        <img class="img_perfil" src="./img/prueba.jpg" alt="Foto perfil">
+      </div>
+
+      <div class="sobremi__texto">
+        <h2 class="sobremi___titulo">
+          Sobre Mi
+        </h2>
+        <h4 class="sobremi__subtitulo">Desarrollador Front-End</h4>
+        <p class="sobremi__descripcion">
+          Egresado de la Ingeniería en el Instituto Tecnológico Superior De Xalapa.
+          <br>
+          Busco oportunidades para hacer prácticas en el área de desarrollo web, contenido digital/multimedia y recursos
+          informáticos, que permita mi
+          crecimiento personal y profesional. <br>
+          Me gusta trabajar en equipo, ayudando de la mejor manera posible
+          para aprender y colaborar en la elaboración diseños, prototipos
+          básicos y servidores web de alto rendimiento en el lenguaje
+          apropiado.
+        </p>
+        <a href="#" class="btn">Más Info</a>
+      </div>
+    </section>
+
+    <!--======================HABILIDADES/APTITUES=====================================-->
+    <section class="aptitudes" id="habilidades">
+      <h2 class="aptitudes__titulo">
+        Aptitudes Profesionales
+      </h2>
+      <div class="aptitudes__descripcion">
+
+        <p>
+          A través de <span class="resaltar"> Oracle Next Education </span> adquirí habilidades técnicas y de desarrollo
+          personal para desempeñarme como Programador Junior. <br>
+          Estoy capacitado para colaborar de manera efectiva, mostrando mi potencial y conocimientos adquiridos en el
+          programa <span class="resaltar">ONE</span> <br>
+          Tambien mediante el programa <span class="resaltar">Aprende "Fundación Carlos Slim"</span>, adquirí
+          habilidades teóricas y técnicas del desarrollo front-end
+        </p>
+      </div>
+
+
+      <div class="aptitudes__contenedor">
+
+        <div class="caja">
+            <i class='bx bxs-user s-icons'></i>
+            <h3 class="titulo">Aptitudes Personales</h3>
+
+            <div class="aptitudes__linea">
+            <div class="aptitudes__nombre">
+             <i class='bx bx-data aptitud__icon'></i>
+              <span class="skills__name">Organización</span>
             </div>
-            <div class="header__menu header__info">
-                <ul class="ul__header header__li">
-                    <li>Sobre mi</li>
-                    <li>Habilidades</li>
-                    <li>Portafolio</li>
-                    <li>Redes Sociales</li>
-                </ul>
-
-                <div class="boton__contacto">
-                    <a href="mailTo:carloszapatalor@gmail.com" class="contacto" aria-label="Enviar mensaje al correo">Contacto</a>
-                </div>
+            <div class="aptitud__contenedor">
+              <span class="aptitud__procentaje">Intermedio</span>
             </div>
-            
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            <section id="inicio" class="inicio">
-                <div class="contenido__izquieda">
-                    <div class="mensaje triangulo">
-                        <div class="mensaje__texto">
-                            <p>Hola, Yo soy</p>
-                        </div> 
-                    </div>
-                    <h1 class="nombre">Carlos Zapata</h1>
-                    <p class="mensaje__info">Aprendiz del desarrollo web</p>
-                    <div class="botones__inicio">
-                        <a class="descargar" href="/img/prueba.jpg" aria-label="Descargar CV" download> Descargar CV </a>
-                        <button class="boton__descargar" aria-label="Descargar">Mi trabajo</button>
-                    </div>
+            <div class="aptitudes__barra aptitud__medio"></div>
 
-                </div>
+          </div>
 
-                <div class="contenido__derecha">
-                    <img src="/img/prueba.jpg" alt="Foto perfil" width="100" height="100">
-                </div>
+           <div class="aptitudes__linea">
+            <div class="aptitudes__nombre">
+             <i class='bx bx-data aptitud__icon'></i>
+              <span class="skills__name">Comunicación</span>
+            </div>
+            <div class="aptitud__contenedor">
+              <span class="aptitud__procentaje">Intermedio</span>
+            </div>
+            <div class="aptitudes__barra aptitud__intermedio"></div>
 
-            </section>
+          </div>
 
-            <section id="sobre__mi">
+          
+          
+           <div class="aptitudes__linea">
+            <div class="aptitudes__nombre">
+             <i class='bx bx-data aptitud__icon'></i>
+              <span class="skills__name">Responsabilidad</span>
+            </div>
+            <div class="aptitud__contenedor">
+              <span class="aptitud__procentaje">Intermedio</span>
+            </div>
+            <div class="aptitudes__barra aptitud__medio"></div>
 
-            </section>
+          </div>
+
+            <div class="aptitudes__linea">
+            <div class="aptitudes__nombre">
+             <i class='bx bx-data aptitud__icon'></i>
+              <span class="skills__name">Trabajo en equipo</span>
+            </div>
+            <div class="aptitud__contenedor">
+              <span class="aptitud__procentaje">Intermedio</span>
+            </div>
+            <div class="aptitudes__barra aptitud__intermedio"></div>
+
+          </div>
+
+
+           <div class="aptitudes__linea">
+            <div class="aptitudes__nombre">
+             <i class='bx bx-data aptitud__icon'></i>
+              <span class="skills__name">Tolerancia a la presión</span>
+            </div>
+            <div class="aptitud__contenedor">
+              <span class="aptitud__procentaje">Intermedio</span>
+            </div>
+            <div class="aptitudes__barra aptitud__intermedio"></div>
+
+          </div>
+
+          
+
+         
+
+           <div class="aptitudes__linea">
+            <div class="aptitudes__nombre">
+             <i class='bx bx-data aptitud__icon'></i>
+              <span class="skills__name">Resolución de problemas</span>
+            </div>
+            <div class="aptitud__contenedor">
+              <span class="aptitud__procentaje">Intermedio</span>
+            </div>
+            <div class="aptitudes__barra aptitud__intermedio"></div>
+
+          </div>
+
+          
+
+         
+
+
         </div>
 
-    </main>
+        <div class="caja">
+         
+          
+           <i class='bx bx-code-block s-icons'> </i> 
+           <h3 class="titulo">Aptitudes de desarrollo web</h3>
+          
+         
+
+           <div class="aptitudes__linea">
+            <div class="aptitudes__nombre">
+              <i class='bx bxl-html5 aptitud__icon'></i>
+              <span class="skills__name">HTML</span>
+            </div>
+            <div class="aptitud__contenedor">
+              <span class="aptitud__procentaje">Intermedio</span>
+            </div>
+            <div class="aptitudes__barra aptitud__html"></div>
+
+          </div>
+
+            <div class="aptitudes__linea">
+            <div class="aptitudes__nombre">
+             <i class='bx bxl-css3 aptitud__icon'></i>
+              <span class="skills__name">CSS</span>
+            </div>
+            <div class="aptitud__contenedor">
+              <span class="aptitud__procentaje">Intermedio</span>
+            </div>
+            <div class="aptitudes__barra aptitud__css"></div>
+
+          </div>
+
+            <div class="aptitudes__linea">
+            <div class="aptitudes__nombre">
+              <i class='bx bxs-file-js aptitud__icon'></i>
+              <span class="skills__name">JS</span>
+            </div>
+            <div class="aptitud__contenedor">
+              <span class="aptitud__procentaje">Basico</span>
+            </div>
+            <div class="aptitudes__barra aptitud__js"></div>
+
+          </div>
+
+           <div class="aptitudes__linea">
+            <div class="aptitudes__nombre">
+              <i class='bx bx-code-alt aptitud__icon'></i>
+              <span class="skills__name">Laravel</span>
+            </div>
+            <div class="aptitud__contenedor">
+              <span class="aptitud__procentaje">Basico</span>
+            </div>
+            <div class="aptitudes__barra aptitud__basico"></div>
+
+          </div>
+
+           <div class="aptitudes__linea">
+            <div class="aptitudes__nombre">
+             <i class='bx bx-data aptitud__icon'></i>
+              <span class="skills__name">MYSQL</span>
+            </div>
+            <div class="aptitud__contenedor">
+              <span class="aptitud__procentaje">Basico</span>
+            </div>
+            <div class="aptitudes__barra aptitud__basico"></div>
+
+          </div>
+
+          <div class="aptitudes__linea">
+            <div class="aptitudes__nombre">
+             <i class='bx bxl-php aptitud__icon'></i>
+              <span class="skills__name">PHP</span>
+            </div>
+            <div class="aptitud__contenedor">
+              <span class="aptitud__procentaje">Basico</span>
+            </div>
+            <div class="aptitudes__barra aptitud__basico"></div>
+
+          </div>
+          
+
+
+
+
+        </div>
+
+        <div class="caja">
+            <i class='bx bxl-adobe s-icons'></i>
+            <h3 class="titulo">Aptitudes de diseño</h3>
+            <div class="aptitudes__linea">
+            <div class="aptitudes__nombre">
+             <i class='bx bxs-user-pin aptitud__icon'></i>
+              <span class="skills__name">Photoshop</span>
+            </div>
+            <div class="aptitud__contenedor">
+              <span class="aptitud__procentaje">Intermedio</span>
+            </div>
+            <div class="aptitudes__barra aptitud__intermedio"></div>
+
+          </div>
+
+          <div class="aptitudes__linea">
+            <div class="aptitudes__nombre">
+             <i class='bx bxs-image aptitud__icon'></i>
+              <span class="skills__name">Ilustrator</span>
+            </div>
+            <div class="aptitud__contenedor">
+              <span class="aptitud__procentaje">Basico</span>
+            </div>
+            <div class="aptitudes__barra aptitud__basico"></div>
+
+          </div>
+
+          <div class="aptitudes__linea">
+            <div class="aptitudes__nombre">
+             <i class='bx bxs-movie-play aptitud__icon'></i>
+              <span class="skills__name">After Effect</span>
+            </div>
+            <div class="aptitud__contenedor">
+              <span class="aptitud__procentaje">Basico</span>
+            </div>
+            <div class="aptitudes__barra aptitud__basico"></div>
+
+          </div>
+
+          <div class="aptitudes__linea">
+            <div class="aptitudes__nombre">
+             <i class='bx bxl-deezer aptitud__icon'></i>
+              <span class="skills__name">Audition</span>
+            </div>
+            <div class="aptitud__contenedor">
+              <span class="aptitud__procentaje">Basico</span>
+            </div>
+            <div class="aptitudes__barra aptitud__basico"></div>
+
+          </div>
+
+          <div class="aptitudes__linea">
+            <div class="aptitudes__nombre">
+             <i class='bx bxs-video-plus aptitud__icon'></i>
+              <span class="skills__name">Premier Pro</span>
+            </div>
+            <div class="aptitud__contenedor">
+              <span class="aptitud__procentaje">Basico</span>
+            </div>
+            <div class="aptitudes__barra aptitud__basico"></div>
+
+          </div>
+
+    
+          <div class="aptitudes__linea">
+            <div class="aptitudes__nombre">
+            <i class='bx bxl-figma aptitud__icon'></i>
+              <span class="skills__name">Figma</span>
+            </div>
+            <div class="aptitud__contenedor">
+              <span class="aptitud__procentaje">Basico</span>
+            </div>
+            <div class="aptitudes__barra aptitud__basico"></div>
+
+          </div>
+
+
+
+
+        </div>
+
+        <div class="caja">
+            <i class='bx bx-globe s-icons'></i>
+            <h3 class="titulo">Idiomas</h3>
+
+            <div class="aptitudes__linea">
+            <div class="aptitudes__nombre">
+             <i class='bx bx-data aptitud__icon'></i>
+              <span class="skills__name">Español</span>
+            </div>
+            <div class="aptitud__contenedor">
+              <span class="aptitud__procentaje">Nativo</span>
+            </div>
+            <div class="aptitudes__barra aptitud__nativo"></div>
+
+          </div>
+
+             <div class="aptitudes__linea">
+            <div class="aptitudes__nombre">
+             <i class='bx bx-data aptitud__icon'></i>
+              <span class="skills__name">Ingles</span>
+            </div>
+            <div class="aptitud__contenedor">
+              <span class="aptitud__procentaje">Basico</span>
+            </div>
+            <div class="aptitudes__barra aptitud__basico"></div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--======================EDUCACION=====================================-->
+
+    <section class="formacion" id="formacion">
+      <h2 class="formacion__titulo">
+        Formación Académica
+      </h2>
+
+       <div class="aptitudes__contenedor">
+
+         <div class="caja2">
+            <i class='bx bxs-graduation s-icons'></i>
+            <h3 class="titulo">Instituto Tecnologico Superior de Xalapa</h3>
+             <div class="img__formacion">
+              <a href="https://www.itsx.edu.mx/" target="_blank">
+                <img src="./img/itsx.jpg" alt="Instituto Tecnologico Superior de Xalapa" >
+              </a>
+            </div>
+           
+          </div>
+
+          <div class="caja2">
+           <i class='bx bxs-graduation s-icons'></i>
+            <h3 class="titulo">AluraLatam Oracle ONE</h3>
+            <div class="img__formacion">
+              <a href="https://www.aluracursos.com/" target="_blank">
+                <img src="./img/alura.jpg" alt="AluraLatam Oracle ONE">
+              </a>
+            </div>
+
+           
+          </div>
+
+          <div class="caja2">
+            <i class='bx bxs-graduation s-icons'></i>
+            <h3 class="titulo">Aprender fundación Carlos Slim</h3>
+             <div class="img__formacion">
+              <a href="https://aprende.org/aprende" target="_blank">
+                <img src="./img/aprende.jpg" alt="Aprender fundación Carlos Slim">
+              </a>
+            </div>
+
+           
+          </div>
+
+
+       </div>
+    </section>
+
+    <!--======================PORTAFOLIO=====================================-->
+
+    <section class="portafolio" id="portafolio">
+      <div class="portafolio__titulo">
+        <h2>Diseños realizados durante mis practicas</h2>
+        <p>Portafolio</p>
+      </div>
+
+      <div class="portafolio__contenido">
+        <div class="row">
+          <img src="./img/proyecto1.png" alt="">
+          <div class="texto__contenido">
+            <h5>Encriptador</h5>
+            <p>Se realizo un encriptador para ocultar texto</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+
+         <div class="row">
+          <img src="./img/Proyecto2.png" alt="">
+          <div class="texto__contenido">
+            <h5>Encriptador</h5>
+            <p>Se realizo un encriptador para ocultar texto</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+
+         <div class="row">
+          <img src="./img/Proyecto3.png" alt="">
+          <div class="texto__contenido">
+            <h5>Encriptador</h5>
+            <p>Se realizo un encriptador para ocultar texto</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--======================CONTACTO=====================================-->
+
+    <section class="contacto" id="contacto">
+      <div class="texto__contacto">
+        <h2>Contactame</h2>
+        <h4>Si tienes algun proyecto en mente</h4>
+        <p>Soy desarrollador Front-End - Diseñando interfaces web responsivos</p>
+        <div class="listas">
+          <li><a href="#">2281830711</a></li>
+          <li><a href="#">EvilZeth@aol.com</a></li>
+          <li><a href="#"></a></li>
+        </div>
+
+        <div class="listas__iconos">
+          <a href="#"><i class='bx bxl-facebook' ></i></a>
+          <a href="#"><i class='bx bxl-twitter' ></i></a>
+          <a href="#"><i class='bx bxl-twitch' ></i></a>
+          <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+          <a href="#"><i class='bx bxl-github' ></i></a>
+        </div>
+      </div>
+
+         <div class="formulario">
+          <form action="">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo" required>
+            <input type="" placeholder="Telefono" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Como puedo ayudarte"></textarea>
+            <input type="submit" value="Enviar Mensaje" class="submit">
+          </form>
+        </div>
+
+    </section>
+  </main>
+  <footer class="footer">
+    <h5>Todos los derechos reservados</h5>
+    <h6>Practica para ONE Alura Latam</h6>
+    <h6>Carlos Zapata</h6>
+  </footer>
+  <!--======================script=====================================-->
+  <script src="./js/main.js"></script>
 </body>
+
 </html>

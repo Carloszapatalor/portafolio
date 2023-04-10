@@ -1,0 +1,98 @@
+@import url(../css/style.css);
+
+.portafolio{
+    background: var( --segundo-fondo);
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    
+}
+
+.portafolio__titulo{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+
+.portafolio__contenido{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+    padding-left: 5rem;
+
+}
+
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.row img{
+    width: 90%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.texto__contenido{
+    width: 95%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.1),var(--color-menu));
+    position: absolute;
+    border-radius: .5rem;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2.5rem;
+    transition:  height 0.5s;
+   
+    
+}
+
+.texto__contenido h5{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: .9375rem;
+    
+}
+
+.texto__contenido p{
+    color: var(--color-fuente);
+    font-size: 1rem;
+    line-height: 1.1;
+}
+
+
+.texto__contenido i{
+    color: var(--color-principal);
+    margin-top: 1.25rem;
+    font-size: 1.25rem;
+    background: var(--segunda-fuente);
+    width: 3.75rem;
+    height: 3.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+
+}
+
+
+.row:hover img{
+    transform: scale(1.1);
+}
+
+.row:hover .texto__contenido{
+    height: 100%;
+}

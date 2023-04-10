@@ -1,140 +1,110 @@
-@import url("./style.css");
+@import url(/css/style.css);
 
-.inicio{
-    display: flex;
-    gap: 15rem;
-    height: 100vh;
-    width: 100vw;
-    position: relative; 
-    justify-content: flex-start;
-}
-
-
-.contenido__izquierda{
-    /**/
-    display: flex;
-
-}
-
-.contenido__derecha img{
-    height:auto;
-    width: auto;
-    border-radius: 15rem;
-}
-
-
-
-.mensaje .triangulo{
-    margin-bottom: 4rem;
-
-}
-
-.mensaje{
-    display: inline-block;
+.inicio {
+    padding: 10rem 15% 7.5rem;
     position: relative;
-    width: 100px;
-    height: auto;
-    padding: .5rem;
-    background-color: var(--segundo-fondo)
-}
-
-.triangulo:after{
-    content: "";
-    position: absolute;
-    left: 40%;
-    border: 20px solid;
-    border-color: var(--segundo-fondo) transparent transparent;
-}
-
-.mensaje__texto{
-    padding: .5rem;
-    text-align: center;
-}
-.nombre{
-    font-size: 5rem;
-
-}
-.mensaje__info{
-    color: gray;
-}
-
-.botones__inicio {
+    height: 100vh;
+    background-image: url(../img/banner2.JPG);
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
-    gap: 2rem;
-    margin-top: 6rem;
-    padding: 1rem 2rem;
-    color: var(--segundo-fondo);
-   
+    justify-content: flex-start;
+    margin-bottom: 10rem;
+
 }
 
-.botones__inicio a{
-    background-color: var(--segundo-fondo);
-    font-size: 1rem;
+.slider{
+    margin-bottom: .25rem;
+}
+
+.uno{
+    display: inline-block;
+    margin-right: .9375rem;
+    height: 2rem;
+    padding: 0 .9375rem;
+    line-height: 2rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: .3125rem;
+    background: var(--color-principal);
+
+}
+
+.dos{
+    display: inline-block;
+    color: var(-color-fuente);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.texto__inicio h1{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 0.5rem;
+}
+
+.texto__inicio h3{
+    margin: 0 0  2.188rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.1;
+    padding: 1rem;
+}
+
+.texto__inicio p{
+    color: var(--segunda-fuente);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+    text-align: justify;
+    letter-spacing: -0.125px; 
+}
+
+.botones__perfil{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    align-items: center;
+    padding: 0.75rem 1.75rem;
+    border-radius: .3125rem;
     color: var(--color-fuente);
-    padding: 1rem 1.5rem;
-}
-
-.botones__inicio button{
-    
-    border: 1px solid var(--color-fuente);
-    border-width: thin;
+    background: var(--color-principal);
     font-size: 1rem;
-    font-family: var(--fuente);
-    padding: 1rem 1.5rem;
-
+    letter-spacing: 0.0625rem;
+    transition: all .45 ease;
 }
 
-.descargar{
-    cursor: pointer;
-    border-radius: 1rem;
-    text-decoration: none;
+.btn:hover{
+    transform: scale(0.9);
 }
 
-.boton__descargar{
-    cursor: pointer;
-    border-radius: 1rem;
-    text-decoration: none;
-}
-
-
-
-@media screen and (max-width:576px) {
-
-    .mensaje{
-        width: 120px;
-    }
-
-    .botones__inicio{
-        padding: 1rem 1rem !important;
-    }
-}
-
-
-@media screen and (max-width:1200px) {
-
-   .inicio{
-    display: flex;
-    flex-direction: column;
-    padding-top: 10rem;
-     gap: 2rem;
-     display: flex;
-}
-
-  .contenido__derecha img{
-    height: 20rem;
-    width: 20rem;
+.btn2{
+    display: inline-flex;
     align-items: center;
-    padding-left: 1rem;
-    border-radius: 15rem;
+    justify-content: center;
+    font-size: .9375rem;
+    margin-left: 2.1875rem;
+    padding: 0.75rem 1.75rem;
+    border-radius: .3125rem;
+    color: var(--color-fondo);
+    background: var(--color-fuente);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.0625rem;
+    transition: all .45 ease;  
 }
-.nombre{
-    font-size: 5rem;
 
+.btn2 i{
+    width: 1.4rem;
 }
 
 
-   
+.btn2:hover{
+    transform: scale(0.9);
 }
-
-    

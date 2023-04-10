@@ -1,0 +1,10 @@
+.footer{
+    background: var(--segundo-fondo);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    
+}

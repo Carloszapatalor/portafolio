@@ -1,0 +1,53 @@
+@import url(/css/style.css);
+.sobre__mi{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+     margin-bottom: 10rem;
+}
+
+
+.sobremi__img {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20rem;
+    
+}
+
+.img_perfil {
+    border-radius: 3rem;
+}
+
+.sobremi__texto h2{
+    font-size: 3rem;
+    line-height: 1;
+}
+
+
+.sobremi__texto h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-texto);
+    line-height: 1.7;
+    margin: .9375rem 0 1.875rem;
+}
+
+.sobremi__texto p{
+
+    color: var(--segundo-color);
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+    text-align: justify;
+
+
+
+   
+}
+  
+  
